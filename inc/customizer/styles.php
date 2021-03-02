@@ -1797,17 +1797,17 @@ if ('menu-off-canvas' === $menu_position) {
         echo sprintf('left: %s;', esc_attr('auto !important'));
         echo '}';
         echo '.potter-menu-off-canvas.canvas-visible {';
-        echo sprintf('left: 0px !important;');
+        echo sprintf( 'left: %s', esc_attr( '0px !important' ));
         echo '}';
         echo '.potter-menu-off-canvas {';
         echo 'left: -100% !important;';
         echo '}';
     } elseif ('right' === $off_canvas_menu_position) {
         echo '.potter-menu-off-canvas.canvas-visible {';
-        echo sprintf('right: 0px !important;');
+        echo sprintf( 'right: %s', esc_attr( '0px !important' ));
         echo '}';
         echo '.potter-menu-off-canvas {';
-        echo sprintf('right: -100% !important;');
+        echo sprintf( 'right: %s', esc_attr( '-100% !important' ));
         echo '}';
     } elseif ('fullscreen' === $off_canvas_menu_position) {
       echo '.potter-menu-off-canvas.fullscreen-container {';
